@@ -27,7 +27,9 @@ body {
   /* background-color: aqua; */
 }
 
-.button {
+
+
+/* .button {
   display: inline-block;
   padding: 0.75rem 1.25rem;
   border-radius: 10rem;
@@ -61,7 +63,7 @@ body {
   width: 0%;
   height: 100%;
   background-color: darken(#0cf, 15%);
-  transition: all 0.3s;
+  transition: all 0.8s;
   border-radius: 10rem;
   z-index: -1;
 }
@@ -72,4 +74,63 @@ body {
 
 .button:hover:before {
   width: 100%;
+} */
+
+.custom-btn {
+  width: 145px;
+  height: 50px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  outline: none;
+}
+
+/* 15 */
+.btn-15 {
+  background: #4070f4;
+  border: none;
+  z-index: 1;
+}
+
+.btn-15:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #385d94;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  transition: all 0.3s ease;
+}
+
+.btn-15:hover {
+  color: #fff;
+}
+
+.btn-15:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+.btn-15:active {
+  top: 2px;
+}
+
+button {
+  margin: 20px;
 }
