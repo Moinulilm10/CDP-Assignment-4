@@ -14,10 +14,10 @@ function displayUsers(users) {
   users.map((user) => {
     const row = document.createElement("tr");
     row.innerHTML = `
-            <td>${user.name}</td>
-            <td>${user.phone}</td>
-            <td>${user.email}</td>
-            <td>${user.address.city}</td>
+            <td data-label="Name">${user.name}</td>
+            <td data-label="Contact">${user.phone}</td>
+            <td data-label="Email">${user.email}</td>
+            <td data-label="City">${user.address.city}</td>
         `;
     userList.appendChild(row);
   });
