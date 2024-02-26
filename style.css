@@ -8,6 +8,11 @@
   font-family: "Poppins", sans-serif !important;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+
 .container {
   margin: 40px;
   display: flex;
@@ -67,13 +72,4 @@
 
 .button:hover:before {
   width: 100%;
-}
-
-
-
-
-/* general styling */
-body {
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.25;
 }

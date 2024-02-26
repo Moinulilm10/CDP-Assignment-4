@@ -25,23 +25,21 @@
         <!-- search input field -->
         <div class="input-box">
             <i class="uil uil-search"></i>
-            <input type="text" placeholder="Search user..." />
-            <button class="search-button">Search</button>
+            <input id="searchInput" type="text" placeholder="Search user..." />
+            <button id="searchButton" class="search-button">Search</button>
         </div>
 
         <div class="table-container">
             <h1>
                 <caption>User data</caption>
             </h1>
-            <table>
-
-                <thead>
+            <table id="user-table">
+                <thead id="user-table-head">
                     <tr>
                         <th scope="col">Name</th>
                         <th scope="col">Contact</th>
                         <th scope="col">Email</th>
                         <th scope="col">City</th>
-                        <th scope="col">Actions</th>
                     </tr>
                 </thead>
                 <tbody id="users-data-list">
@@ -50,31 +48,7 @@
                         <td data-label="Contact">04/01/2016</td>
                         <td data-label="Email">$1,190</td>
                         <td data-label="City">03/01/2016 - 03/31/2016</td>
-                        <td data-label="Button">
-                            <span>
-                                <button type="button" class="btn btn-primary">Edit</button>
-                                <button type="button" class="btn btn-danger">Delete</button>
-                            </span>
-                        </td>
                     </tr>
-                    <!-- <tr>
-                        <td scope="row" data-label="Account">Visa - 6076</td>
-                        <td data-label="Due Date">03/01/2016</td>
-                        <td data-label="Amount">$2,443</td>
-                        <td data-label="Period">02/01/2016 - 02/29/2016</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" data-label="Account">Corporate AMEX</td>
-                        <td data-label="Due Date">03/01/2016</td>
-                        <td data-label="Amount">$1,181</td>
-                        <td data-label="Period">02/01/2016 - 02/29/2016</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" data-label="Acount">Visa - 3412</td>
-                        <td data-label="Due Date">02/01/2016</td>
-                        <td data-label="Amount">$842</td>
-                        <td data-label="Period">01/01/2016 - 01/31/2016</td>
-                    </tr> -->
                 </tbody>
             </table>
         </div>
